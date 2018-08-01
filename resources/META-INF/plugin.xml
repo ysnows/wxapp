@@ -26,8 +26,8 @@
     </extensions >
 
     <actions >
-        <action id="com.ysnows.wxapp.relatedfiles" class="com.ysnows.wxapp.RelatedAction"
-                text="RelatedAction" description="打开相关的文件" >
+        <action id="com.ysnows.wxapp.relatedfiles" class="com.ysnows.wxapp.CreateFuncAction"
+                text="CreateFuncFromWxml" description="从wxml生成function" >
             <add-to-group group-id="GenerateGroup" anchor="first" />
             <keyboard-shortcut keymap="$default" first-keystroke="option meta 9" />
         </action >

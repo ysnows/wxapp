@@ -31,25 +31,41 @@ public class CreateFuncAction extends AnAction {
             return;
         }
 
+        //如果是js文件，就去读取wxml文件；如果是wxml文件，就读取方法，写入的js文件
 
-        PsiFile file = PsiUtilBase.getPsiFileInEditor(editor, project);
-        if (file == null) {
+        PsiFile currentFile = PsiUtilBase.getPsiFileInEditor(editor, project);
+        if (currentFile == null) {
             Utils.showErrorNotification(project, Constants.Message.ERROR_FILE_NULL);
             return;
         }
 
-        String wxmlFileName = file.getName().replace("js", "wxml");
-        PsiFile[] wxmlFiles = FilenameIndex.getFilesByName(project, wxmlFileName, GlobalSearchScope.allScope(project));
-        if (wxmlFiles.length < 1) {
-            Utils.showErrorNotification(project, Constants.Message.ERROR_NOT_FOUND);
-            return;
-        }
-        if (wxmlFiles.length > 1) {
-            Utils.showErrorNotification(project, Constants.Message.ERROR_MORE_THAN_ONE_FILE + wxmlFileName);
+        PsiFile wxmlFile;
+        PsiFile jsFile;
+        if (currentFile.getName().endsWith("wxml")) {
+            wxmlFile = currentFile;
+            String fileName = wxmlFile.getName().replace("wxml", "js");
+            jsFile = getPsiFileByName(project, fileName);
+
+            createFuncToJs(functionsName, wxmlFile, jsFile);
+
+        } else if (currentFile.getName().endsWith("js")) {
+            jsFile = currentFile;
+            String wxmlFileName = jsFile.getName().replace("js", "wxml");
+            wxmlFile = getPsiFileByName(project, wxmlFileName);
+
+            if (wxmlFile == null) {
+                return;
+            }
+
+//            createFuncToJs(functionsName, wxmlFile, jsFile);
+        } else {
+            Utils.showErrorNotification(project, Constants.Message.ERROR_FILE_NOT_SUPPORT);
             return;
         }
 
-        PsiFile wxmlFile = wxmlFiles[0];
+    }
+
+    private void createFuncToJs(List<String> functionsName, PsiFile wxmlFile, PsiFile jsFile) {
         String wxmlContent = wxmlFile.getText();
 
         Pattern re = Utils.getRegexPattern();
@@ -74,8 +90,22 @@ public class CreateFuncAction extends AnAction {
         }
 
 
-        new Writer(file, functionsName).execute();
+        new Writer(jsFile, functionsName).execute();
     }
 
+
+    private PsiFile getPsiFileByName(Project project, String wxmlFileName) {
+        PsiFile[] wxmlFiles = FilenameIndex.getFilesByName(project, wxmlFileName, GlobalSearchScope.allScope(project));
+        if (wxmlFiles.length < 1) {
+            Utils.showErrorNotification(project, Constants.Message.ERROR_NOT_FOUND);
+            return null;
+        }
+        if (wxmlFiles.length > 1) {
+            Utils.showErrorNotification(project, Constants.Message.ERROR_MORE_THAN_ONE_FILE + wxmlFileName);
+            return null;
+        }
+
+        return wxmlFiles[0];
+    }
 
 }

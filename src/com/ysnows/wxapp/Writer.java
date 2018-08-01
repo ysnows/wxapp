@@ -44,7 +44,7 @@ class Writer extends WriteCommandAction.Simple {
                 continue;
 
             injectNum++;
-            String functionBuffer = functionName.concat(": function (event) {\n\n\t},\n");
+            String functionBuffer = functionName.concat(": function (e) {\n\n\t},\n");
             contentBuffer.insert(index, "\n\t" + functionBuffer);
         }
 

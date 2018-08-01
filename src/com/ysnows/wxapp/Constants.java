@@ -26,6 +26,7 @@ class Constants {
                 ERROR_NOT_FOUND = "No WXML found",
                 ERROR_FILE_NULL = "Can't get file , please check your permission or contact me",
                 ERROR_MORE_THAN_ONE_FILE = "There exists more than one file in your project called ",
+                ERROR_FILE_NOT_SUPPORT = "不支持的文件类型",
                 MESSAGE_INJECT_SUCCESSFULLY = "Match made . Inject %1$d functions for you",
                 MESSAGE_INJECT_NOTHING = "Nothing to inject";
     }

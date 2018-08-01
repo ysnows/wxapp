@@ -1,0 +1,36 @@
+<idea-plugin >
+    <id >com.ysnows.wxapp</id >
+    <name >Wxapp</name >
+    <version >1.0</version >
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com" >YourCompany</vendor >
+
+    <description ><![CDATA[
+        微信小程序插件
+    ]]></description >
+
+    <change-notes ><![CDATA[
+    ]]>
+    </change-notes >
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0" />
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    -->
+    <depends >com.intellij.modules.lang</depends >
+
+    <extensions defaultExtensionNs="com.intellij" >
+        <!-- Add your extensions here -->
+    </extensions >
+
+    <actions >
+        <action id="com.ysnows.wxapp.relatedfiles" class="com.ysnows.wxapp.RelatedAction"
+                text="RelatedAction" description="打开相关的文件" >
+            <add-to-group group-id="GenerateGroup" anchor="first" />
+            <keyboard-shortcut keymap="$default" first-keystroke="option meta 9" />
+        </action >
+    </actions >
+
+</idea-plugin >

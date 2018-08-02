@@ -57,7 +57,7 @@ public class CreateFuncAction extends AnAction {
                 return;
             }
 
-//            createFuncToJs(functionsName, wxmlFile, jsFile);
+            createFuncToJs(functionsName, wxmlFile, jsFile);
         } else {
             Utils.showErrorNotification(project, Constants.Message.ERROR_FILE_NOT_SUPPORT);
             return;
@@ -72,7 +72,7 @@ public class CreateFuncAction extends AnAction {
         Matcher matcher = re.matcher(wxmlContent);
 
         List<String> tempList = new ArrayList<>();
-        while ((matcher.find())) {
+        while (matcher.find()) {
             tempList.add(matcher.group());
         }
 

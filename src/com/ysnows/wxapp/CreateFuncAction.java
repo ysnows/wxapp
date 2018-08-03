@@ -1,30 +1,40 @@
 package com.ysnows.wxapp;
 
+import com.intellij.ide.util.TreeClassChooser;
+import com.intellij.ide.util.TreeClassChooserFactory;
+import com.intellij.ide.util.TreeFileChooser;
+import com.intellij.ide.util.TreeFileChooserDialog;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.actionSystem.LangDataKeys;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.editor.Editor;
+import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.search.FilenameIndex;
 import com.intellij.psi.search.GlobalSearchScope;
 import com.intellij.psi.util.PsiUtilBase;
 
+import java.awt.Component;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.ListCellRenderer;
+
 public class CreateFuncAction extends AnAction {
 
 
     @Override
-    public void actionPerformed(AnActionEvent anActionEvent) {
+    public void actionPerformed(AnActionEvent e) {
 
         List<String> functionsName = new ArrayList<>();
-
-        Project project = anActionEvent.getData(PlatformDataKeys.PROJECT);
-        Editor editor = anActionEvent.getData(PlatformDataKeys.EDITOR);
+        Project project = e.getData(PlatformDataKeys.PROJECT);
+        Editor editor = e.getData(PlatformDataKeys.EDITOR);
         //验空
         if (project == null || editor == null) {
             Utils.showErrorNotification(project, Constants.Message.ERROR_FILE_NULL);
@@ -62,7 +72,6 @@ public class CreateFuncAction extends AnAction {
             Utils.showErrorNotification(project, Constants.Message.ERROR_FILE_NOT_SUPPORT);
             return;
         }
-
     }
 
     private void createFuncToJs(List<String> functionsName, PsiFile wxmlFile, PsiFile jsFile) {
@@ -95,7 +104,7 @@ public class CreateFuncAction extends AnAction {
 
 
     private PsiFile getPsiFileByName(Project project, String wxmlFileName) {
-        PsiFile[] wxmlFiles = FilenameIndex.getFilesByName(project, wxmlFileName, GlobalSearchScope.allScope(project));
+        PsiFile[] wxmlFiles = FilenameIndex.getFilesByName(project, wxmlFileName, GlobalSearchScope.projectScope(project));
         if (wxmlFiles.length < 1) {
             Utils.showErrorNotification(project, Constants.Message.ERROR_NOT_FOUND);
             return null;

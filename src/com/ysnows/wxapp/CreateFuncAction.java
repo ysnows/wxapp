@@ -19,13 +19,15 @@ public class CreateFuncAction extends AnAction {
 
 
     private Project project;
+    private Editor editor;
 
     @Override
     public void actionPerformed(AnActionEvent e) {
 
         List<String> functionsName = new ArrayList<>();
         project = e.getData(PlatformDataKeys.PROJECT);
-        Editor editor = e.getData(PlatformDataKeys.EDITOR);
+        editor = e.getData(PlatformDataKeys.EDITOR);
+
         //验空
         if (project == null || editor == null) {
             Utils.showErrorNotification(project, Constants.Message.ERROR_FILE_NULL);
@@ -90,7 +92,7 @@ public class CreateFuncAction extends AnAction {
         }
 
 
-        new Writer(jsFile, functionsName,project).execute();
+        new Writer(jsFile, functionsName, project, editor).execute();
     }
 
 

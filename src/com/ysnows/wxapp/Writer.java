@@ -2,17 +2,13 @@ package com.ysnows.wxapp;
 
 import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.editor.Editor;
+import com.intellij.openapi.editor.EditorFactory;
 import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.MessageType;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.openapi.vfs.VirtualFileManager;
-import com.intellij.openapi.wm.WindowManager;
-import com.intellij.psi.PsiDirectory;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiManager;
-import com.intellij.psi.impl.file.PsiDirectoryFactory;
-import com.intellij.ui.FileColorManager;
 
 import java.io.OutputStream;
 import java.util.List;
@@ -31,13 +27,15 @@ class Writer extends WriteCommandAction.Simple {
     //存放wxml文件里包含的所有方法头的列表
     private final List<String> mFunctionsName;
     private Project project;
+    private Editor editor;
 
-    Writer(PsiFile psiFile, List<String> functionsName, Project project) {
+    Writer(PsiFile psiFile, List<String> functionsName, Project project, Editor editor) {
         super(psiFile.getProject(), psiFile);
 
         mFile = psiFile;
         mFunctionsName = functionsName;
         this.project = project;
+        this.editor = editor;
     }
 
     @Override
@@ -50,7 +48,7 @@ class Writer extends WriteCommandAction.Simple {
         String substring = content.substring(0, index);
         index = substring.lastIndexOf("}") + 1;
 
-//        StringBuilder contentBuffer = new StringBuilder(content);
+        StringBuilder contentBuffer = new StringBuilder(content);
 
 
         for (String functionName : mFunctionsName) {
@@ -59,10 +57,10 @@ class Writer extends WriteCommandAction.Simple {
             if (matcher.find())
                 continue;
             injectNum++;
-            String functionBuffer = ",\n\t" + functionName.concat(": function (e) {\n\n\t}");
-//            contentBuffer.insert(index, "\n\t" + functionBuffer);
+            String functionBuffer = ",\n\t" + functionName.concat(": function (e) {\n\t\t\n\t}");
+            contentBuffer.insert(index, "\n\t" + functionBuffer);
 
-            PsiManager.getInstance(project).findViewProvider(virtualFile).getDocument().insertString(index, "\n\t" + functionBuffer);
+//            PsiManager.getInstance(project).findViewProvider(virtualFile).getDocument().insertString(index, "\n\t" + functionBuffer);
 
         }
 
@@ -72,15 +70,24 @@ class Writer extends WriteCommandAction.Simple {
         }
 
 
-//        OutputStream outputStream = virtualFile.getOutputStream(this);
-//        outputStream.write(contentBuffer.toString().getBytes());
-//        outputStream.flush();
-//        outputStream.close();
+        OutputStream outputStream = virtualFile.getOutputStream(this);
+        outputStream.write(contentBuffer.toString().getBytes());
+        outputStream.flush();
+        outputStream.close();
 
         PsiManager.getInstance(project).reloadFromDisk(mFile);
-
         FileEditorManager.getInstance(this.project).openFile(virtualFile, true, true);
 
+//        this.editor.getCaretModel().getCurrentCaret().moveToOffset(index);
+
+        // 移动光标
+
+        index = contentBuffer.toString().lastIndexOf("}");
+        substring = contentBuffer.toString().substring(0, index);
+        index = substring.lastIndexOf("}") - 2;
+
+        Editor editor = EditorFactory.getInstance().getEditors(PsiManager.getInstance(project).findViewProvider(virtualFile).getDocument(), project)[0];
+        editor.getCaretModel().moveToOffset(index);
 
         Utils.showNotification(mFile.getProject(), String.format(Constants.Message.MESSAGE_INJECT_SUCCESSFULLY, injectNum), MessageType.INFO);
     }

@@ -50,7 +50,7 @@ class Writer extends WriteCommandAction.Simple {
         String substring = content.substring(0, index);
         index = substring.lastIndexOf("}") + 1;
 
-        StringBuilder contentBuffer = new StringBuilder(content);
+//        StringBuilder contentBuffer = new StringBuilder(content);
 
 
         for (String functionName : mFunctionsName) {
@@ -58,10 +58,12 @@ class Writer extends WriteCommandAction.Simple {
             Matcher matcher = pattern.matcher(content);
             if (matcher.find())
                 continue;
-
             injectNum++;
             String functionBuffer = ",\n\t" + functionName.concat(": function (e) {\n\n\t}");
-            contentBuffer.insert(index, "\n\t" + functionBuffer);
+//            contentBuffer.insert(index, "\n\t" + functionBuffer);
+
+            PsiManager.getInstance(project).findViewProvider(virtualFile).getDocument().insertString(index, "\n\t" + functionBuffer);
+
         }
 
         if (injectNum == 0) {
@@ -69,14 +71,17 @@ class Writer extends WriteCommandAction.Simple {
             return;
         }
 
-        OutputStream outputStream = virtualFile.getOutputStream(this);
-        outputStream.write(contentBuffer.toString().getBytes());
-        outputStream.flush();
-        outputStream.close();
+
+//        OutputStream outputStream = virtualFile.getOutputStream(this);
+//        outputStream.write(contentBuffer.toString().getBytes());
+//        outputStream.flush();
+//        outputStream.close();
 
         PsiManager.getInstance(project).reloadFromDisk(mFile);
 
         FileEditorManager.getInstance(this.project).openFile(virtualFile, true, true);
+
+
         Utils.showNotification(mFile.getProject(), String.format(Constants.Message.MESSAGE_INJECT_SUCCESSFULLY, injectNum), MessageType.INFO);
     }
 }

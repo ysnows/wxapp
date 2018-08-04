@@ -107,6 +107,7 @@ public class CreateFuncAction extends AnAction {
             return null;
         }
 
+
         return wxmlFiles[0];
     }
 

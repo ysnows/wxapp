@@ -32,9 +32,9 @@
             <keyboard-shortcut keymap="$default" first-keystroke="option meta 9" />
         </action >
 
-        <action id="com.ysnows.wxapp.RelatedWxFiles" class="com.ysnows.wxapp.RelatedWxFiles" text="RelatedWxFiles"
+        <action id="com.ysnows.wxapp.RelatedWxFiles" class="com.ysnows.wxapp.RelatedWxFiles"
+                text="RelatedWxFiles"
                 description="RelatedWxFiles" >
-            <add-to-group group-id="GenerateGroup" anchor="last" />
             <keyboard-shortcut keymap="$default" first-keystroke="shift meta I" />
         </action >
     </actions >

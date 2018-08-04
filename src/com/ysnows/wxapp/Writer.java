@@ -2,9 +2,16 @@ package com.ysnows.wxapp;
 
 import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.editor.Editor;
+import com.intellij.openapi.fileEditor.FileEditorManager;
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.ui.MessageType;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.openapi.vfs.VirtualFileManager;
 import com.intellij.openapi.wm.WindowManager;
+import com.intellij.psi.PsiDirectory;
 import com.intellij.psi.PsiFile;
+import com.intellij.psi.PsiManager;
+import com.intellij.psi.impl.file.PsiDirectoryFactory;
 import com.intellij.ui.FileColorManager;
 
 import java.io.OutputStream;
@@ -23,12 +30,14 @@ class Writer extends WriteCommandAction.Simple {
 
     //存放wxml文件里包含的所有方法头的列表
     private final List<String> mFunctionsName;
+    private Project project;
 
-    Writer(PsiFile psiFile, List<String> functionsName) {
+    Writer(PsiFile psiFile, List<String> functionsName, Project project) {
         super(psiFile.getProject(), psiFile);
 
         mFile = psiFile;
         mFunctionsName = functionsName;
+        this.project = project;
     }
 
     @Override
@@ -61,11 +70,13 @@ class Writer extends WriteCommandAction.Simple {
         }
 
         OutputStream outputStream = virtualFile.getOutputStream(this);
-
         outputStream.write(contentBuffer.toString().getBytes());
         outputStream.flush();
         outputStream.close();
 
-        Utils.showErrorNotification(mFile.getProject(), String.format(Constants.Message.MESSAGE_INJECT_SUCCESSFULLY, injectNum));
+        PsiManager.getInstance(project).reloadFromDisk(mFile);
+
+        FileEditorManager.getInstance(this.project).openFile(virtualFile, true, true);
+        Utils.showNotification(mFile.getProject(), String.format(Constants.Message.MESSAGE_INJECT_SUCCESSFULLY, injectNum), MessageType.INFO);
     }
 }

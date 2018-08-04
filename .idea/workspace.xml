@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedFiles.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedWxFiles.java" afterDir="false" />
+    <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="1. 添加wxml和js之间的跳转">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/wxapp/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wxapp/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wxapp/com/ysnows/wxapp/Writer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wxapp/com/ysnows/wxapp/Writer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/i.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/i.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wxapp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/wxapp.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,36 +24,42 @@
     <session id="1216844406">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
+          <entry key="class" value="9" />
           <entry key="form" value="1" />
-          <entry key="java" value="3" />
-          <entry key="xml" value="2" />
+          <entry key="java" value="13" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
+          <entry key="CLASS" value="9" />
           <entry key="GUI_DESIGNER_FORM" value="1" />
-          <entry key="JAVA" value="3" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="13" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="471" />
-          <entry key="xml" value="10" />
+          <entry key="java" value="794" />
+          <entry key="txt" value="18" />
+          <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="471" />
-          <entry key="XML" value="10" />
+          <entry key="JAVA" value="794" />
+          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="XML" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -67,31 +70,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="362">
+              <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+        <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="37" column="76" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedWxFiles.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            <state relative-caret-position="505">
+              <caret line="38" column="101" lean-forward="true" selection-start-line="38" selection-start-column="101" selection-end-line="38" selection-end-column="101" />
             </state>
           </provider>
         </entry>
@@ -126,8 +117,6 @@
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedAction.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Constants.java" />
-        <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java" />
-        <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/i.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/ui/RelatedFiles.form" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/ui/RelatedFiles.java" />
@@ -135,8 +124,10 @@
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedFiles.form" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedFiles.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedWxFiles.java" />
-        <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java" />
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java" />
+        <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java" />
+        <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java" />
       </list>
     </option>
   </component>
@@ -170,8 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,26 +171,21 @@
             <path>
               <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-              <item name="RelatedFiles" type="e9f4de52:FormNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,7 +318,10 @@
       <workItem from="1533265087368" duration="1130000" />
       <workItem from="1533266389713" duration="5610000" />
       <workItem from="1533280298517" duration="8000000" />
-      <workItem from="1533289991329" duration="3749000" />
+      <workItem from="1533289991329" duration="3900000" />
+      <workItem from="1533344296645" duration="200000" />
+      <workItem from="1533344522941" duration="283000" />
+      <workItem from="1533344989186" duration="3585000" />
     </task>
     <task id="LOCAL-00001" summary="1. 添加wxapp.jar">
       <created>1533109811180</created>
@@ -357,17 +344,24 @@
       <option name="project" value="LOCAL" />
       <updated>1533205616541</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1. 添加wxml和js之间的跳转">
+      <created>1533293878779</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533293878779</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37678000" />
+    <option name="totallyTimeSpent" value="41897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1867" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25013775" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2600551" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -410,7 +404,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. 添加wxapp.jar" />
     <MESSAGE value="1. 优化逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 优化逻辑" />
+    <MESSAGE value="1. 添加wxml和js之间的跳转" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 添加wxml和js之间的跳转" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -429,7 +424,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java</url>
-          <line>57</line>
+          <line>25</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -437,40 +432,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/resources.jar!/idea/LangActions.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/codeInsight/actions/CodeInsightAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/codeInsight/generation/actions/BaseGenerateAction.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -541,27 +502,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="183" column="22" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/javax/swing/JPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -646,10 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="51" column="57" lean-forward="true" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
-          <folding>
-            <element signature="e#2331#2332#0" expanded="true" />
-            <element signature="e#2364#2365#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,16 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -723,27 +653,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedWxFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="45" column="20" selection-start-line="45" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/actionSystem/AnActionEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="233" column="5" lean-forward="true" selection-start-line="233" selection-start-column="5" selection-end-line="233" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/com/intellij/psi/impl/file/PsiDirectoryFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/ui/popup/JBPopupFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="221">
+          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedWxFiles.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="362">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/wm/StatusBarInfo.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="37" column="76" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="76" />
+        <state relative-caret-position="144">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/util.jar!/com/intellij/openapi/Disposable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/wm/StatusBar.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="147" column="13" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/awt/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="134" column="32" lean-forward="true" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/javax/swing/JFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="122" column="32" lean-forward="true" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/wm/WindowManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/javax/swing/JComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="183" column="22" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/util.jar!/com/intellij/ui/awt/RelativePoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="149" column="32" lean-forward="true" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="38" column="101" lean-forward="true" selection-start-line="38" selection-start-column="101" selection-end-line="38" selection-end-column="101" />
         </state>
       </provider>
     </entry>

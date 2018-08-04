@@ -25,6 +25,10 @@ class Utils {
         showNotification(project, MessageType.ERROR, text);
     }
 
+    static void showNotification(Project project, String text, MessageType type) {
+        showNotification(project, type, text);
+    }
+
     private static void showNotification(Project project, MessageType type, String text) {
         StatusBar statusBar = WindowManager.getInstance().getStatusBar(project);
 

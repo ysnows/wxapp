@@ -37,6 +37,18 @@
                 description="RelatedWxFiles" >
             <keyboard-shortcut keymap="$default" first-keystroke="shift meta I" />
         </action >
+
+        <action id="com.ysnows.wxapp.SyncTs" class="com.ysnows.wxapp.SyncTs" text="同步wx.d.ts"
+                description="同步wx.d.ts到项目目录" >
+            <add-to-group group-id="FileMenu" anchor="last" />
+            <keyboard-shortcut keymap="$default" first-keystroke="shift meta n" />
+        </action >
+
+        <action id="com.ysnows.wxapp.CreateWxFiles" class="com.ysnows.wxapp.CreateWxFiles"
+                text="Wxapp File"
+                description="CreateWxFiles" >
+            <add-to-group group-id="NewGroup" anchor="last" />
+        </action >
     </actions >
 
 </idea-plugin >

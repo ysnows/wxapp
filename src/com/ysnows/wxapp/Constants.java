@@ -28,6 +28,7 @@ class Constants {
                 ERROR_MORE_THAN_ONE_FILE = "There exists more than one file in your project called ",
                 ERROR_FILE_NOT_SUPPORT = "不支持的文件类型",
                 MESSAGE_INJECT_SUCCESSFULLY = "生成成功：为你生成了 %1$d 个方法",
-                MESSAGE_INJECT_NOTHING = "没有需要生成的方法";
+                MESSAGE_INJECT_NOTHING = "没有需要生成的方法",
+                MESSAGE_DOWNLOAD_SUCCESS = "微信wx.d.ts文件下载成功";
     }
 }

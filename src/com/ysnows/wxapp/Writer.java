@@ -62,7 +62,6 @@ class Writer extends WriteCommandAction.Simple {
             contentBuffer.insert(index, functionBuffer);
 
 //            PsiManager.getInstance(project).findViewProvider(virtualFile).getDocument().insertString(index, "\n\t" + functionBuffer);
-
         }
 
         if (injectNum == 0) {

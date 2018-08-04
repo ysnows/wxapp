@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="1. 优化生成方法后的光标位置">
+    <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="1. 优化生成方法后移动文件位置到光标位置">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wxapp/com/ysnows/wxapp/Writer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wxapp/com/ysnows/wxapp/Writer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,10 +30,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="14" />
+          <entry key="class" value="16" />
           <entry key="form" value="1" />
           <entry key="gif" value="1" />
-          <entry key="java" value="16" />
+          <entry key="java" value="17" />
           <entry key="md" value="1" />
           <entry key="ts" value="2" />
           <entry key="xml" value="4" />
@@ -41,10 +41,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="14" />
+          <entry key="CLASS" value="16" />
           <entry key="GUI_DESIGNER_FORM" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="17" />
           <entry key="Markdown" value="1" />
           <entry key="TypeScript" value="2" />
           <entry key="XML" value="4" />
@@ -52,17 +52,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1189" />
+          <entry key="java" value="1213" />
           <entry key="md" value="127" />
-          <entry key="txt" value="63" />
+          <entry key="txt" value="70" />
           <entry key="xml" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1189" />
+          <entry key="JAVA" value="1213" />
           <entry key="Markdown" value="127" />
-          <entry key="PLAIN_TEXT" value="63" />
+          <entry key="PLAIN_TEXT" value="70" />
           <entry key="XML" value="32" />
         </counts>
       </usages-collector>
@@ -80,20 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="279">
+              <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -207,7 +195,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533364512355" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533366991781" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/AndroidPj" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -335,7 +323,7 @@
       <workItem from="1533289991329" duration="3900000" />
       <workItem from="1533344296645" duration="200000" />
       <workItem from="1533344522941" duration="283000" />
-      <workItem from="1533344989186" duration="16260000" />
+      <workItem from="1533344989186" duration="17882000" />
     </task>
     <task id="LOCAL-00001" summary="1. 添加wxapp.jar">
       <created>1533109811180</created>
@@ -393,11 +381,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533363040533</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1. 优化生成方法后移动文件位置到光标位置">
+      <created>1533365257551</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1533365257551</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54572000" />
+    <option name="totallyTimeSpent" value="56194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="24" width="1867" height="1057" extended-state="6" />
@@ -452,7 +447,8 @@
     <MESSAGE value="1. 添加readme" />
     <MESSAGE value="1. 优化文件写入方法" />
     <MESSAGE value="1. 优化生成方法后的光标位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 优化生成方法后的光标位置" />
+    <MESSAGE value="1. 优化生成方法后移动文件位置到光标位置" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 优化生成方法后移动文件位置到光标位置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -479,20 +475,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="185" column="22" selection-start-line="185" selection-start-column="22" selection-end-line="185" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/awt/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/javax/swing/JPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -813,18 +795,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="100">
+          <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/editor/ScrollingModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-351">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/editor/Editor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+        <state relative-caret-position="279">
+          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
         </state>
       </provider>
     </entry>

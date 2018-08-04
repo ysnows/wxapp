@@ -59,7 +59,7 @@ class Writer extends WriteCommandAction.Simple {
                 continue;
             injectNum++;
             String functionBuffer = ",\n\t" + functionName + ": function (e) {\n\t\t\n\t}";
-            contentBuffer.insert(index, "\n\t" + functionBuffer);
+            contentBuffer.insert(index, functionBuffer);
 
 //            PsiManager.getInstance(project).findViewProvider(virtualFile).getDocument().insertString(index, "\n\t" + functionBuffer);
 
@@ -80,7 +80,7 @@ class Writer extends WriteCommandAction.Simple {
         //打开js文件
         FileEditorManager.getInstance(this.project).openFile(virtualFile, true, true);
 
-//        this.editor.getCaretModel().getCurrentCaret().moveToOffset(index);
+//      this.editor.getCaretModel().getCurrentCaret().moveToOffset(index);
 
         // 移动光标
         index = contentBuffer.toString().lastIndexOf("}");
@@ -91,9 +91,7 @@ class Writer extends WriteCommandAction.Simple {
         editor.getCaretModel().moveToOffset(index);
 
         //滑动文件位置到光标的位置
-
         editor.getScrollingModel().scrollToCaret(ScrollType.RELATIVE);
-
 
         Utils.showNotification(mFile.getProject(), String.format(Constants.Message.MESSAGE_INJECT_SUCCESSFULLY, injectNum), MessageType.INFO);
     }

@@ -2,14 +2,13 @@ package com.ysnows.wxapp;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.actionSystem.DataKeys;
+import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.command.WriteCommandAction;
+import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.ui.UIBundle;
-
-import java.io.IOException;
 
 public class CreateWxFiles extends AnAction {
 
@@ -31,9 +30,8 @@ public class CreateWxFiles extends AnAction {
                     UIBundle.message("error.dialog.title"), Messages.getErrorIcon());
         }
 
-        VirtualFile selectedFile = DataKeys.VIRTUAL_FILE.getData(e.getDataContext());
-        String path = selectedFile.getPath();
 
+        VirtualFile selectedFile = PlatformDataKeys.VIRTUAL_FILE.getData(e.getDataContext());
 
         VirtualFile newFile = selectedFile.findChild(newFileName);
         if (newFile != null) {
@@ -53,22 +51,25 @@ public class CreateWxFiles extends AnAction {
 
         new WriteCommandAction.Simple(project) {
             @Override
-            protected void run() throws Throwable {
+            protected void run() {
                 try {
 
                     VirtualFile copyFile = wxtp.copy(null, selectedFile, newFileName);
                     VirtualFile[] children = copyFile.getChildren();
 
-                    for (VirtualFile child : children) {
+                    for (int i = 0; i < children.length; i++) {
+                        VirtualFile child = children[children.length - i - 1];
+                        FileEditorManager.getInstance(project).openFile(child, true, true);
+
                         String name = child.getName();
                         int lastIndexOf = name.lastIndexOf(".");
                         String substring = name.substring(0, lastIndexOf);
                         String replace = name.replace(substring, newFileName);
+
                         child.rename(null, replace);
                     }
 
-                } catch (IOException e1) {
-                    e1.printStackTrace();
+
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                 }

@@ -35,7 +35,6 @@ public class RelatedWxFiles extends AnAction {
             FileEditorManager.getInstance(project).openFile(wxmlFile.getVirtualFile(), true, true);
         }
 
-
 //        Project project = e.getProject();
 //
 //        TreeFileChooser.PsiFileFilter psiFileFilter = new TreeFileChooser.PsiFileFilter() {

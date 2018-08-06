@@ -33,7 +33,6 @@ public class CreateFuncAction extends AnAction {
         }
 
         //如果是js文件，就去读取wxml文件；如果是wxml文件，就读取方法，写入的js文件
-
         PsiFile currentFile = PsiUtilBase.getPsiFileInEditor(editor, project);
         if (currentFile == null) {
             Utils.showErrorNotification(project, Constants.Message.ERROR_FILE_NULL);

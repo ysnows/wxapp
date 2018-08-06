@@ -8,7 +8,7 @@ import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.wm.StatusBar;
 import com.intellij.openapi.wm.WindowManager;
 import com.intellij.psi.PsiFile;
-import com.intellij.psi.util.PsiUtil;
+import com.intellij.psi.PsiManager;
 import com.intellij.ui.awt.RelativePoint;
 
 import java.io.ByteArrayOutputStream;
@@ -96,7 +96,7 @@ class Utils {
             return null;
         }
 
-        return PsiUtil.getPsiFile(project, child);
+        return PsiManager.getInstance(project).findFile(child);
 
     }
 

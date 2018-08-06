@@ -40,7 +40,7 @@
           <entry key="ts" value="3" />
           <entry key="wxml" value="2" />
           <entry key="wxss" value="3" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -54,7 +54,7 @@
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="TypeScript" value="3" />
-          <entry key="XML" value="12" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -63,7 +63,7 @@
           <entry key="java" value="3558" />
           <entry key="md" value="127" />
           <entry key="txt" value="126" />
-          <entry key="xml" value="93" />
+          <entry key="xml" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -71,7 +71,7 @@
           <entry key="JAVA" value="3558" />
           <entry key="Markdown" value="127" />
           <entry key="PLAIN_TEXT" value="130" />
-          <entry key="XML" value="93" />
+          <entry key="XML" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -125,11 +125,11 @@
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/i.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/InitWxTpFiles.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Constants.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/SyncTs.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -173,6 +173,17 @@
               <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -186,7 +197,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533531499788" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533531749251" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/AndroidPj" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -316,7 +327,7 @@
       <workItem from="1533344296645" duration="200000" />
       <workItem from="1533344522941" duration="283000" />
       <workItem from="1533344989186" duration="27891000" />
-      <workItem from="1533516014211" duration="10914000" />
+      <workItem from="1533516014211" duration="11210000" />
     </task>
     <task id="LOCAL-00001" summary="1. 添加wxapp.jar">
       <created>1533109811180</created>
@@ -416,16 +427,30 @@
       <option name="project" value="LOCAL" />
       <updated>1533531415598</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1. 添加创建page功能&#10;2. 优化代码">
+      <created>1533531494566</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1533531494566</updated>
+    </task>
+    <task id="LOCAL-00016" summary="1. 添加创建page功能&#10;2. 优化代码">
+      <created>1533531613787</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1533531613787</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77117000" />
+    <option name="totallyTimeSpent" value="77413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1867" height="1057" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2633609" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2633609" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -435,7 +460,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49917355" visible="true" weight="0.32824427" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49917355" visible="true" weight="0.32824427" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997245" weight="0.3991276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -467,6 +492,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="1. 添加wxapp.jar" />
     <MESSAGE value="1. 优化逻辑" />
     <MESSAGE value="1. 添加wxml和js之间的跳转" />
@@ -748,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="54" column="81" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -845,6 +865,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
         </state>
       </provider>
     </entry>

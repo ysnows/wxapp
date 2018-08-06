@@ -1,6 +1,4 @@
-### 微信小程序intellji插件，支持PHPSTORM,WEBSTORM等全部intellij产品
-
-> 首先，这款插件是基于[Matchmaker](https://github.com/lypeer/Matchmaker)修改而来，要感谢作者的辛苦劳动
+### 微信小程序WebStorm插件，支持PHPSTORM,WEBSTORM等全部intellij产品
 
 
 ##### 功能
@@ -34,4 +32,12 @@
 
 #### Todo
   1. 后续将不断优化体验以及开发新功能，希望广大码农提出建设性的意见，或者直接贡献代码^^
+
+
+    
+    
+#### 参考
+    
+1. 这款插件是基于[Matchmaker](https://github.com/lypeer/Matchmaker)修改而来，要感谢作者的辛苦劳动
+
 

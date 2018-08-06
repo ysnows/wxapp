@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="1. 优化文件查找">
-      <change beforePath="$PROJECT_DIR$/out/production/wxapp/com/ysnows/wxapp/Constants$Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wxapp/com/ysnows/wxapp/Constants$Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wxapp/com/ysnows/wxapp/Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedWxFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedWxFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxapp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/wxapp.jar" afterDir="false" />
+    <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="1. 更改Wxapp File 为Page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,14 +36,14 @@
           <entry key="gif" value="1" />
           <entry key="gitignore" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="57" />
+          <entry key="java" value="58" />
           <entry key="js" value="4" />
           <entry key="json" value="2" />
           <entry key="md" value="3" />
           <entry key="ts" value="3" />
           <entry key="wxml" value="2" />
           <entry key="wxss" value="3" />
-          <entry key="xml" value="13" />
+          <entry key="xml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -57,13 +52,13 @@
           <entry key="GUI_DESIGNER_FORM" value="1" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="57" />
+          <entry key="JAVA" value="58" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="TypeScript" value="3" />
-          <entry key="XML" value="13" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -71,16 +66,16 @@
           <entry key="gitignore" value="4" />
           <entry key="java" value="4130" />
           <entry key="md" value="127" />
-          <entry key="txt" value="144" />
-          <entry key="xml" value="120" />
+          <entry key="txt" value="177" />
+          <entry key="xml" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="4130" />
           <entry key="Markdown" value="127" />
-          <entry key="PLAIN_TEXT" value="148" />
-          <entry key="XML" value="120" />
+          <entry key="PLAIN_TEXT" value="181" />
+          <entry key="XML" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -95,10 +90,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java">
+        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+            <state relative-caret-position="460">
+              <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -143,12 +138,12 @@
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/InitWxTpFiles.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/SyncTs.java" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Constants.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/RelatedWxFiles.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -191,6 +186,17 @@
             <path>
               <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
@@ -347,7 +353,7 @@
       <workItem from="1533344522941" duration="283000" />
       <workItem from="1533344989186" duration="27891000" />
       <workItem from="1533516014211" duration="11261000" />
-      <workItem from="1533534307873" duration="6996000" />
+      <workItem from="1533534307873" duration="7315000" />
     </task>
     <task id="LOCAL-00001" summary="1. 添加wxapp.jar">
       <created>1533109811180</created>
@@ -475,17 +481,31 @@
       <option name="project" value="LOCAL" />
       <updated>1533535579837</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="1. 优化page文件创建">
+      <created>1533541429775</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1533541429775</updated>
+    </task>
+    <task id="LOCAL-00020" summary="1. 更改Wxapp File 为Page">
+      <created>1533541562113</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1533541562113</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84460000" />
+    <option name="totallyTimeSpent" value="84779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1867" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26666668" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26666668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -495,7 +515,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49917355" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49917355" weight="0.32824427" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997245" weight="0.3991276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -543,7 +563,9 @@
     <MESSAGE value="1. 添加创建page功能&#10;2. 优化代码" />
     <MESSAGE value="1. 优化readme.md" />
     <MESSAGE value="1. 优化文件查找" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 优化文件查找" />
+    <MESSAGE value="1. 优化page文件创建" />
+    <MESSAGE value="1. 更改Wxapp File 为Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 更改Wxapp File 为Page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/actionSystem/ex/ActionUtil.class">
@@ -792,13 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxapp.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -852,8 +867,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        <state relative-caret-position="213">
+          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
         </state>
       </provider>
     </entry>

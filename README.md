@@ -18,7 +18,7 @@
   
   ![QQ20180806-103511.mp4](http://ozk223z60.bkt.clouddn.com/QQ20180806-103511.mp4.gif)
   
- 4. 根据模板创建page，默认根据项目根目录下的`wxtp`文件夹下的文件进行复制创建page,在`pages`目录`右键`->`New`->`Wxapp File`->`输入page名称`
+ 4. 根据模板创建page，默认根据项目根目录下的`wxtp`文件夹下的文件进行复制创建page,在`pages`目录`右键`->`New`->`Wx Page`->`输入page名称`
     
     ![](http://ozk223z60.bkt.clouddn.com/15335231513256.jpg?imageView/2/w/475)
     

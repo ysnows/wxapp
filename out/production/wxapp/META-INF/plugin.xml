@@ -1,7 +1,7 @@
 <idea-plugin >
     <id >com.ysnows.wxapp</id >
     <name >Wxapp</name >
-    <version >1.0</version >
+    <version >1.0.1</version >
     <vendor email="ysnows@163.com" url="https://github.com/ysnows" >ysnows</vendor >
 
     <description ><![CDATA[
@@ -9,6 +9,7 @@
     ]]></description >
 
     <change-notes ><![CDATA[
+    1. 添加创建page功能
     ]]>
     </change-notes >
 
@@ -48,6 +49,11 @@
                 text="Wxapp File"
                 description="CreateWxFiles" >
             <add-to-group group-id="NewGroup" anchor="last" />
+        </action >
+        <action id="com.ysnows.wxapp.InitWxTpFiles" class="com.ysnows.wxapp.InitWxTpFiles" text="InitWxTpFiles"
+                description="初始化微信模板文件" >
+            <add-to-group group-id="FileMenu" anchor="first" />
+            <keyboard-shortcut keymap="$default" first-keystroke="shift meta S" />
         </action >
     </actions >
 

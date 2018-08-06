@@ -56,6 +56,11 @@
             <add-to-group group-id="FileMenu" anchor="first" />
             <keyboard-shortcut keymap="$default" first-keystroke="shift meta S" />
         </action >
+        <action id="com.ysnows.wxapp.RelatedDirFiles" class="com.ysnows.wxapp.RelatedDirFiles" text="RelatedDirFiles"
+                description="同一个目录下的相关文件" >
+            <add-to-group group-id="MainMenu" anchor="last" />
+            <keyboard-shortcut keymap="$default" first-keystroke="meta ctrl I" />
+        </action >
     </actions >
 
 </idea-plugin >

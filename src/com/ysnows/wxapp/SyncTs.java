@@ -39,7 +39,16 @@ public class SyncTs extends AnAction {
 
                     VirtualFile baseDir = this.getProject().getBaseDir();
 
-                    VirtualFile childData = baseDir.createChildData(null, "wx.d.ts");
+                    VirtualFile typings = baseDir.findChild("typings");
+                    if (typings == null) {
+                        typings = baseDir.createChildDirectory(null, "typings");
+                    }
+
+                    VirtualFile wxdts = typings.findChild("wx.d.ts");
+                    if (wxdts != null) {
+                        wxdts.delete(null);
+                    }
+                    VirtualFile childData = typings.createChildData(null, "wx.d.ts");
                     childData.setBinaryContent(getData);
 
 //                    String basePath = e.getProject().getBasePath();

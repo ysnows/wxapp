@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="1. 修改app.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxapp.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/SyncTs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/SyncTs.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,25 +19,26 @@
     <session id="1216844406">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="36" />
+          <entry key="class" value="37" />
           <entry key="form" value="1" />
           <entry key="gif" value="1" />
           <entry key="gitignore" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="64" />
+          <entry key="java" value="66" />
           <entry key="js" value="4" />
           <entry key="json" value="2" />
           <entry key="md" value="5" />
@@ -49,11 +50,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="36" />
+          <entry key="CLASS" value="37" />
           <entry key="GUI_DESIGNER_FORM" value="1" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="64" />
+          <entry key="JAVA" value="66" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="5" />
@@ -65,7 +66,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="4" />
-          <entry key="java" value="4591" />
+          <entry key="java" value="4683" />
           <entry key="md" value="134" />
           <entry key="txt" value="191" />
           <entry key="xml" value="149" />
@@ -73,7 +74,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4591" />
+          <entry key="JAVA" value="4683" />
           <entry key="Markdown" value="134" />
           <entry key="PLAIN_TEXT" value="195" />
           <entry key="XML" value="149" />
@@ -89,7 +90,17 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/SyncTs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -127,7 +138,6 @@
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/i.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Writer.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/InitWxTpFiles.java" />
-        <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/SyncTs.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Constants.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateFuncAction.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/Utils.java" />
@@ -136,6 +146,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/AppJson.java" />
         <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java" />
+        <option value="$PROJECT_DIR$/src/com/ysnows/wxapp/SyncTs.java" />
       </list>
     </option>
   </component>
@@ -169,8 +180,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,13 +193,23 @@
             <path>
               <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxapp" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,7 +352,8 @@
       <workItem from="1533344989186" duration="27891000" />
       <workItem from="1533516014211" duration="11261000" />
       <workItem from="1533534307873" duration="7754000" />
-      <workItem from="1533542247711" duration="4678000" />
+      <workItem from="1533542247711" duration="4769000" />
+      <workItem from="1533547658569" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="1. 添加wxapp.jar">
       <created>1533109811180</created>
@@ -500,16 +523,24 @@
       <option name="project" value="LOCAL" />
       <updated>1533547154133</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="1. 修改app.json">
+      <created>1533547235963</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1533547235963</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89896000" />
+    <option name="totallyTimeSpent" value="90335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1867" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26997244" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2738292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -519,7 +550,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49917355" visible="true" weight="0.32824427" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49917355" visible="true" weight="0.32824427" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997245" weight="0.35223556" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -785,13 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/SyncTs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -864,17 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/vfs/VirtualFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="509" column="35" lean-forward="true" selection-start-line="509" selection-start-column="35" selection-end-line="509" selection-end-column="35" />
-          <folding>
-            <element signature="e#16445#16446#0" expanded="true" />
-            <element signature="e#16501#16502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/AppJson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -884,8 +897,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+        <state relative-caret-position="276">
+          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/vfs/VirtualFile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="287" column="16" selection-start-line="287" selection-start-column="16" selection-end-line="287" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/SyncTs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
         </state>
       </provider>
     </entry>

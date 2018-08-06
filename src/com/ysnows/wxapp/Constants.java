@@ -23,7 +23,7 @@ class Constants {
      */
     interface Message {
         String
-                ERROR_NOT_FOUND = "No WXML found",
+                ERROR_NOT_FOUND = "没有找到对应的文件",
                 ERROR_FILE_NULL = "Can't get file , please check your permission or contact me",
                 ERROR_MORE_THAN_ONE_FILE = "There exists more than one file in your project called ",
                 ERROR_FILE_NOT_SUPPORT = "不支持的文件类型",

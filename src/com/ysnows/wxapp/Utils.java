@@ -4,8 +4,11 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.MessageType;
 import com.intellij.openapi.ui.popup.Balloon;
 import com.intellij.openapi.ui.popup.JBPopupFactory;
+import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.wm.StatusBar;
 import com.intellij.openapi.wm.WindowManager;
+import com.intellij.psi.PsiFile;
+import com.intellij.psi.util.PsiUtil;
 import com.intellij.ui.awt.RelativePoint;
 
 import java.io.ByteArrayOutputStream;
@@ -78,4 +81,23 @@ class Utils {
         return bos.toByteArray();
 
     }
+
+
+    public static PsiFile getPsiFileByNameInSameDir(Project project, String fileName, PsiFile currentFile) {
+        VirtualFile virtualFile = currentFile.getVirtualFile();
+        VirtualFile child = virtualFile.getParent().findChild(fileName);
+        if (child == null) {
+            Utils.showErrorNotification(project, Constants.Message.ERROR_NOT_FOUND);
+            return null;
+        }
+
+        if (!child.exists()) {
+            Utils.showErrorNotification(project, Constants.Message.ERROR_NOT_FOUND);
+            return null;
+        }
+
+        return PsiUtil.getPsiFile(project, child);
+
+    }
+
 }

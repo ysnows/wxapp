@@ -6,8 +6,6 @@ import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiFile;
-import com.intellij.psi.search.FilenameIndex;
-import com.intellij.psi.search.GlobalSearchScope;
 import com.intellij.psi.util.PsiUtilBase;
 
 import java.util.ArrayList;
@@ -47,14 +45,14 @@ public class CreateFuncAction extends AnAction {
         if (currentFile.getName().endsWith("wxml")) {
             wxmlFile = currentFile;
             String fileName = wxmlFile.getName().replace("wxml", "js");
-            jsFile = getPsiFileByName(project, fileName);
+            jsFile = Utils.getPsiFileByNameInSameDir(project, fileName, currentFile);
 
             createFuncToJs(functionsName, wxmlFile, jsFile);
 
         } else if (currentFile.getName().endsWith("js")) {
             jsFile = currentFile;
             String wxmlFileName = jsFile.getName().replace("js", "wxml");
-            wxmlFile = getPsiFileByName(project, wxmlFileName);
+            wxmlFile = Utils.getPsiFileByNameInSameDir(project, wxmlFileName, currentFile);
 
             if (wxmlFile == null) {
                 return;
@@ -94,21 +92,4 @@ public class CreateFuncAction extends AnAction {
 
         new Writer(jsFile, functionsName, project, editor).execute();
     }
-
-
-    private PsiFile getPsiFileByName(Project project, String wxmlFileName) {
-        PsiFile[] wxmlFiles = FilenameIndex.getFilesByName(project, wxmlFileName, GlobalSearchScope.projectScope(project));
-        if (wxmlFiles.length < 1) {
-            Utils.showErrorNotification(project, Constants.Message.ERROR_NOT_FOUND);
-            return null;
-        }
-        if (wxmlFiles.length > 1) {
-            Utils.showErrorNotification(project, Constants.Message.ERROR_MORE_THAN_ONE_FILE + wxmlFileName);
-            return null;
-        }
-
-
-        return wxmlFiles[0];
-    }
-
 }

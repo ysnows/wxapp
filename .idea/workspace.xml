@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="1. 更改Wxapp File 为Wx Page">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.8.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/AppJson.java" afterDir="false" />
+    <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="1. 修改app.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wxapp/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wxapp/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gson-2.8.5.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wxapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxapp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/wxapp.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,7 +38,7 @@
           <entry key="gif" value="1" />
           <entry key="gitignore" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="63" />
+          <entry key="java" value="64" />
           <entry key="js" value="4" />
           <entry key="json" value="2" />
           <entry key="md" value="5" />
@@ -59,7 +54,7 @@
           <entry key="GUI_DESIGNER_FORM" value="1" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="63" />
+          <entry key="JAVA" value="64" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="5" />
@@ -71,17 +66,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="4" />
-          <entry key="java" value="4466" />
+          <entry key="java" value="4584" />
           <entry key="md" value="134" />
-          <entry key="txt" value="180" />
+          <entry key="txt" value="191" />
           <entry key="xml" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4466" />
+          <entry key="JAVA" value="4584" />
           <entry key="Markdown" value="134" />
-          <entry key="PLAIN_TEXT" value="184" />
+          <entry key="PLAIN_TEXT" value="195" />
           <entry key="XML" value="149" />
         </counts>
       </usages-collector>
@@ -99,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
+            <state relative-caret-position="181">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
             </state>
           </provider>
         </entry>
@@ -192,17 +187,6 @@
           <expand>
             <path>
               <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wxapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wxapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wxapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -352,7 +336,7 @@
       <workItem from="1533344989186" duration="27891000" />
       <workItem from="1533516014211" duration="11261000" />
       <workItem from="1533534307873" duration="7754000" />
-      <workItem from="1533542247711" duration="3386000" />
+      <workItem from="1533542247711" duration="4429000" />
     </task>
     <task id="LOCAL-00001" summary="1. 添加wxapp.jar">
       <created>1533109811180</created>
@@ -501,11 +485,25 @@
       <option name="project" value="LOCAL" />
       <updated>1533541758599</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="1. 修改app.json">
+      <created>1533545949063</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1533545949063</updated>
+    </task>
+    <task id="LOCAL-00023" summary="1. 修改app.json">
+      <created>1533546403048</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1533546403048</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88604000" />
+    <option name="totallyTimeSpent" value="89647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1867" height="1057" extended-state="6" />
@@ -521,8 +519,8 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49917355" visible="true" weight="0.32824427" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997245" weight="0.35223556" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49917355" weight="0.32824427" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4997245" visible="true" weight="0.35223556" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -572,7 +570,20 @@
     <MESSAGE value="1. 优化page文件创建" />
     <MESSAGE value="1. 更改Wxapp File 为Page" />
     <MESSAGE value="1. 更改Wxapp File 为Wx Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 更改Wxapp File 为Wx Page" />
+    <MESSAGE value="1. 修改app.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 修改app.json" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/ui/popup/JBPopupFactory.class">
@@ -885,8 +896,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/CreateWxFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
+        <state relative-caret-position="181">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>

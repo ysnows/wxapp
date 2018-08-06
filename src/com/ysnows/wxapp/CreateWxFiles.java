@@ -1,6 +1,5 @@
 package com.ysnows.wxapp;
 
-import com.google.gson.Gson;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
@@ -80,13 +79,17 @@ public class CreateWxFiles extends AnAction {
                     PsiFile psiFile = PsiManager.getInstance(project).findFile(app);
 
                     String s = psiFile.getText();
+                    int index = s.indexOf("[");
 
-                    Gson gson = new Gson();
-                    AppJson appJson = gson.fromJson(s, AppJson.class);
 
-                    appJson.pages.add(selectedFile.getName() + File.separator + newFileName + File.separator + newFileName);
+                    psiFile.getViewProvider().getDocument().insertString(index + 1, "\n\t\"" + selectedFile.getName() + File.separator + newFileName + File.separator + newFileName + "\",");
 
-                    app.setBinaryContent(gson.toJson(appJson).getBytes());
+//                    Gson gson = new Gson();
+//                    AppJson appJson = gson.fromJson(s, AppJson.class);
+//
+//                    appJson.pages.add(selectedFile.getName() + File.separator + newFileName + File.separator + newFileName);
+//
+//                    app.setBinaryContent(gson.toJson(appJson).getBytes());
 
 
                 } catch (Throwable throwable) {
@@ -95,8 +98,6 @@ public class CreateWxFiles extends AnAction {
             }
         }.execute();
 
-
-        System.out.print("Hello");
 //        if (file.mkdirs()) {
 //            String tpFileName = "wxtp";
 //            tpFile = new File(path, tpFileName);

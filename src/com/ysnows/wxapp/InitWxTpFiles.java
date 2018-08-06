@@ -105,16 +105,16 @@ public class InitWxTpFiles extends AnAction {
             protected void run() throws Throwable {
                 try {
                     VirtualFile childDirectory = baseDir.createChildDirectory(null, "wxtp");
-                    VirtualFile ajs = childDirectory.createChildData(null, "a.js");
+                    VirtualFile ajs = childDirectory.createChildData(null, "wxtp.js");
                     ajs.setBinaryContent(ajsText.getBytes());
 
-                    VirtualFile awxml = childDirectory.createChildData(null, "a.wxml");
+                    VirtualFile awxml = childDirectory.createChildData(null, "wxtp.wxml");
                     awxml.setBinaryContent(awxmlText.getBytes());
 
-                    VirtualFile awxss = childDirectory.createChildData(null, "a.wxss");
+                    VirtualFile awxss = childDirectory.createChildData(null, "wxtp.wxss");
                     awxss.setBinaryContent(awxssText.getBytes());
 
-                    VirtualFile ajson = childDirectory.createChildData(null, "a.json");
+                    VirtualFile ajson = childDirectory.createChildData(null, "wxtp.json");
                     ajson.setBinaryContent(ajsonText.getBytes());
 
 

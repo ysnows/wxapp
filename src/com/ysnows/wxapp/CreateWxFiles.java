@@ -1,5 +1,6 @@
 package com.ysnows.wxapp;
 
+import com.google.gson.Gson;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
@@ -8,7 +9,11 @@ import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.psi.PsiFile;
+import com.intellij.psi.PsiManager;
 import com.intellij.ui.UIBundle;
+
+import java.io.File;
 
 public class CreateWxFiles extends AnAction {
 
@@ -22,6 +27,7 @@ public class CreateWxFiles extends AnAction {
 
         newFileName = Messages.showInputDialog(UIBundle.message("create.new.file.enter.new.file.name.prompt.text"),
                 UIBundle.message("new.file.dialog.title"), Messages.getQuestionIcon());
+
         if (newFileName == null) {
             return;
         }
@@ -57,6 +63,7 @@ public class CreateWxFiles extends AnAction {
                     VirtualFile copyFile = wxtp.copy(null, selectedFile, newFileName);
                     VirtualFile[] children = copyFile.getChildren();
 
+
                     for (int i = 0; i < children.length; i++) {
                         VirtualFile child = children[children.length - i - 1];
                         FileEditorManager.getInstance(project).openFile(child, true, true);
@@ -68,6 +75,18 @@ public class CreateWxFiles extends AnAction {
 
                         child.rename(null, replace);
                     }
+
+                    VirtualFile app = project.getBaseDir().findChild("app.json");
+                    PsiFile psiFile = PsiManager.getInstance(project).findFile(app);
+
+                    String s = psiFile.getText();
+
+                    Gson gson = new Gson();
+                    AppJson appJson = gson.fromJson(s, AppJson.class);
+
+                    appJson.pages.add(selectedFile.getName() + File.separator + newFileName + File.separator + newFileName);
+
+                    app.setBinaryContent(gson.toJson(appJson).getBytes());
 
 
                 } catch (Throwable throwable) {

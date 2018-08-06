@@ -46,11 +46,12 @@
         </action >
 
         <action id="com.ysnows.wxapp.CreateWxFiles" class="com.ysnows.wxapp.CreateWxFiles"
-                text="Wxapp File"
-                description="CreateWxFiles" >
+                text="Wx Page"
+                description="创建微信page" >
             <add-to-group group-id="NewGroup" anchor="last" />
         </action >
-        <action id="com.ysnows.wxapp.InitWxTpFiles" class="com.ysnows.wxapp.InitWxTpFiles" text="InitWxTpFiles"
+        <action id="com.ysnows.wxapp.InitWxTpFiles" class="com.ysnows.wxapp.InitWxTpFiles"
+                text="InitWxTpFiles"
                 description="初始化微信模板文件" >
             <add-to-group group-id="FileMenu" anchor="first" />
             <keyboard-shortcut keymap="$default" first-keystroke="shift meta S" />

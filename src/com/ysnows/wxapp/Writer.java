@@ -11,7 +11,6 @@ import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiManager;
 
-import java.io.OutputStream;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -60,8 +59,6 @@ class Writer extends WriteCommandAction.Simple {
             injectNum++;
             String functionBuffer = ",\n\t" + functionName + ": function (e) {\n\t\t\n\t}";
             contentBuffer.insert(index, functionBuffer);
-
-//            PsiManager.getInstance(project).findViewProvider(virtualFile).getDocument().insertString(index, "\n\t" + functionBuffer);
         }
 
         if (injectNum == 0) {
@@ -69,13 +66,10 @@ class Writer extends WriteCommandAction.Simple {
             return;
         }
 
-        OutputStream outputStream = virtualFile.getOutputStream(this);
-        outputStream.write(contentBuffer.toString().getBytes());
-        outputStream.flush();
-        outputStream.close();
+        virtualFile.setBinaryContent(contentBuffer.toString().getBytes());
 
         //从磁盘中加载文件
-        PsiManager.getInstance(project).reloadFromDisk(mFile);
+//        PsiManager.getInstance(project).reloadFromDisk(mFile);
         //打开js文件
         FileEditorManager.getInstance(this.project).openFile(virtualFile, true, true);
 

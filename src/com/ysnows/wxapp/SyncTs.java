@@ -2,11 +2,12 @@ package com.ysnows.wxapp;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.progress.util.ProgressWindow;
+import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.MessageType;
+import com.intellij.openapi.vfs.VirtualFile;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -19,37 +20,45 @@ public class SyncTs extends AnAction {
     @Override
     public void actionPerformed(AnActionEvent e) {
         // TODO: insert action logic here
-
-        progressWindow = new ProgressWindow(false, e.getProject());
+        Project project = e.getProject();
+        progressWindow = new ProgressWindow(false, project);
         progressWindow.setTitle("正在下载wx.d.ts...");
         progressWindow.start();
 
-        new Thread(() -> {
 
-            try {
-                URL url = new URL("https://gitee.com/ysnow/wechat_small_program_api/raw/master/wx.d.ts");
-                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                conn.setConnectTimeout(3 * 1000);
-                InputStream inputStream = conn.getInputStream();
-                byte[] getData = Utils.readInputStream(inputStream);
+        new WriteCommandAction.Simple(project) {
 
+            @Override
+            protected void run() throws Throwable {
+                try {
+                    URL url = new URL("https://gitee.com/ysnow/wechat_small_program_api/raw/master/wx.d.ts");
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                    conn.setConnectTimeout(3 * 1000);
+                    InputStream inputStream = conn.getInputStream();
+                    byte[] getData = Utils.readInputStream(inputStream);
 
-                String basePath = e.getProject().getBasePath();
-                File file = new File(basePath + File.separator + "wx.d.ts");
-                FileOutputStream fos = new FileOutputStream(file);
-                fos.write(getData);
-                fos.close();
+                    VirtualFile baseDir = this.getProject().getBaseDir();
 
-                inputStream.close();
+                    VirtualFile childData = baseDir.createChildData(null, "wx.d.ts");
+                    childData.setBinaryContent(getData);
 
-                Utils.showNotification(e.getProject(), Constants.Message.MESSAGE_DOWNLOAD_SUCCESS, MessageType.INFO);
-                progressWindow.stop();
-            } catch (IOException ex) {
-                ex.printStackTrace();
-                progressWindow.stop();
+//                    String basePath = e.getProject().getBasePath();
+//                    File file = new File(basePath + File.separator + "wx.d.ts");
+//                    FileOutputStream fos = new FileOutputStream(file);
+//                    fos.write(getData);
+//                    fos.close();
+//
+//                    inputStream.close();
 
+                    Utils.showNotification(project, Constants.Message.MESSAGE_DOWNLOAD_SUCCESS, MessageType.INFO);
+                    progressWindow.stop();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                    progressWindow.stop();
+
+                }
             }
+        }.execute();
 
-        }).start();
     }
 }

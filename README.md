@@ -15,6 +15,16 @@
    
    2. `wxml`和`js`文件快速切换：快捷键默认`shift+cmd+9`,如果不生效的话，在设置里找到快捷键设置，搜`RelatedWxFiles`:
         ![](http://ozk223z60.bkt.clouddn.com/15333507645739.jpg)
+        
+  3. 同步`wx.d.ts`文件，用于代码提示，文件内容基于github上的[wx.d.ts](https://github.com/hellopao/wx.d.ts),但是本码农会持续更新,为了访问速度，放到了oschina上[微信小程序API](https://gitee.com/ysnow/wechat_small_program_api);快捷键`ctrl+shift+n`
+  
+    ![QQ20180806-103511.mp4](http://ozk223z60.bkt.clouddn.com/QQ20180806-103511.mp4.gif)
+ 4. 根据模板创建page，默认根据项目根目录下的`wxtp`文件夹下的文件进行复制创建page,在`pages`目录`右键`->`New`->`Wxapp File`->`输入page名称`
+    
+    ![](http://ozk223z60.bkt.clouddn.com/15335231513256.jpg?imageView/2/w/475)
+    
+ 5. 也可以通过快捷键`shift+ctrl+s`同步插件自带的微信page模板
+    
     
 
 #### 安装

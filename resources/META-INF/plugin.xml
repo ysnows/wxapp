@@ -1,7 +1,7 @@
 <idea-plugin >
     <id >com.ysnows.wxapp</id >
     <name >Wxapp</name >
-    <version >1.0.1</version >
+    <version >1.0.2</version >
     <vendor email="ysnows@163.com" url="https://github.com/ysnows" >ysnows</vendor >
 
     <description ><![CDATA[
@@ -9,7 +9,7 @@
     ]]></description >
 
     <change-notes ><![CDATA[
-    1. 添加创建page功能
+        1. 添加打开同意目录下文件的功能
     ]]>
     </change-notes >
 

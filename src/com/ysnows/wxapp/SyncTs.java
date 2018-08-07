@@ -30,8 +30,28 @@ public class SyncTs extends AnAction {
 
             @Override
             protected void run() throws Throwable {
+                String urlStr = "https://gitee.com/ysnow/wechat_small_program_api/raw/master/wx.d.ts";
+
+//                ArrayList<String> urls = new ArrayList<>();
+//                urls.add("https://raw.githubusercontent.com/qiu8310/minapp/master/packages/minapp-wx/typing/wx.d.ts");
+//                urls.add("https://raw.githubusercontent.com/qiu8310/minapp/master/packages/minapp-wx/typing/page.d.ts");
+//                urls.add("https://raw.githubusercontent.com/qiu8310/minapp/master/packages/minapp-wx/typing/component.d.ts");
+//                urls.add("https://raw.githubusercontent.com/qiu8310/minapp/master/packages/minapp-wx/typing/behavior.d.ts");
+//                urls.add("https://raw.githubusercontent.com/qiu8310/minapp/master/packages/minapp-wx/typing/app.d.ts");
+//
+//                for (String url : urls) {
+//                    download(url);
+//                }
+
+                download(urlStr);
+
+                Utils.showNotification(project, Constants.Message.MESSAGE_DOWNLOAD_SUCCESS, MessageType.INFO);
+                progressWindow.stop();
+            }
+
+            private void download(String urlStr) {
                 try {
-                    URL url = new URL("https://gitee.com/ysnow/wechat_small_program_api/raw/master/wx.d.ts");
+                    URL url = new URL(urlStr);
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setConnectTimeout(3 * 1000);
                     InputStream inputStream = conn.getInputStream();
@@ -44,11 +64,13 @@ public class SyncTs extends AnAction {
                         typings = baseDir.createChildDirectory(null, "typings");
                     }
 
-                    VirtualFile wxdts = typings.findChild("wx.d.ts");
+                    String name = urlStr.substring(urlStr.lastIndexOf("/") + 1);
+
+                    VirtualFile wxdts = typings.findChild(name);
                     if (wxdts != null) {
                         wxdts.delete(null);
                     }
-                    VirtualFile childData = typings.createChildData(null, "wx.d.ts");
+                    VirtualFile childData = typings.createChildData(null, name);
                     childData.setBinaryContent(getData);
 
 //                    String basePath = e.getProject().getBasePath();
@@ -59,8 +81,7 @@ public class SyncTs extends AnAction {
 //
 //                    inputStream.close();
 
-                    Utils.showNotification(project, Constants.Message.MESSAGE_DOWNLOAD_SUCCESS, MessageType.INFO);
-                    progressWindow.stop();
+
                 } catch (IOException ex) {
                     ex.printStackTrace();
                     progressWindow.stop();

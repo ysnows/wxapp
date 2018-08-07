@@ -23,6 +23,10 @@
     ![](http://ozk223z60.bkt.clouddn.com/15335231513256.jpg?imageView/2/w/475)
     
  5. 也可以通过快捷键`shift+ctrl+s`同步插件自带的微信page模板
+ 6. 通过`ctrl+cmd+i`打开当前目录中的文件
+ 
+    ![](http://ozk223z60.bkt.clouddn.com/15336016155392.jpg)
+
     
     
 

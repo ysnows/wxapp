@@ -69,7 +69,7 @@ class Writer extends WriteCommandAction.Simple {
         virtualFile.setBinaryContent(contentBuffer.toString().getBytes());
 
         //从磁盘中加载文件
-//        PsiManager.getInstance(project).reloadFromDisk(mFile);
+        PsiManager.getInstance(project).reloadFromDisk(mFile);
         //打开js文件
         FileEditorManager.getInstance(this.project).openFile(virtualFile, true, true);
 

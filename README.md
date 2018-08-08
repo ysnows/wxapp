@@ -11,7 +11,7 @@
 
 
    
-   2. `wxml`和`js`文件快速切换：快捷键默认`shift+cmd+9`,如果不生效的话，在设置里找到快捷键设置，搜`RelatedWxFiles`:
+   2. `wxml`和`js`文件快速切换：快捷键默认`shift+cmd+i`,如果不生效的话，在设置里找到快捷键设置，搜`RelatedWxFiles`:
         ![](http://ozk223z60.bkt.clouddn.com/15333507645739.jpg)
         
   3. 同步`wx.d.ts`文件，用于代码提示，文件内容基于github上的[wx.d.ts](https://github.com/hellopao/wx.d.ts),但是本码农会持续更新,为了访问速度，放到了oschina上[微信小程序API](https://gitee.com/ysnow/wechat_small_program_api);快捷键`ctrl+shift+n`

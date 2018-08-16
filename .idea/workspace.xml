@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="1. 优化功能">
+    <list default="true" id="21065aba-ccb3-4d00-9252-3ffe9a214894" name="Default" comment="1. 拼音转换">
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/city.db" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/sqlite-jdbc-3.20.1.1.jar" afterDir="false" />
@@ -61,6 +61,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="city.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+        <item name="city: table" type="ffe0bd85:SqliteImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -89,13 +96,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="android_metadata" value="1" />
-          <entry key="city" value="12" />
+          <entry key="city" value="14" />
           <entry key="class" value="37" />
           <entry key="form" value="1" />
           <entry key="gif" value="1" />
           <entry key="gitignore" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="85" />
+          <entry key="java" value="86" />
           <entry key="js" value="4" />
           <entry key="json" value="2" />
           <entry key="md" value="5" />
@@ -110,11 +117,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="37" />
-          <entry key="Database Element" value="14" />
+          <entry key="Database Element" value="16" />
           <entry key="GUI_DESIGNER_FORM" value="1" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="85" />
+          <entry key="JAVA" value="86" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="5" />
@@ -128,17 +135,17 @@
         <counts>
           <entry key="cell" value="4" />
           <entry key="gitignore" value="4" />
-          <entry key="java" value="6180" />
+          <entry key="java" value="6209" />
           <entry key="md" value="134" />
-          <entry key="txt" value="229" />
+          <entry key="txt" value="234" />
           <entry key="xml" value="162" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6180" />
+          <entry key="JAVA" value="6209" />
           <entry key="Markdown" value="134" />
-          <entry key="PLAIN_TEXT" value="233" />
+          <entry key="PLAIN_TEXT" value="238" />
           <entry key="Scratch" value="4" />
           <entry key="XML" value="162" />
         </counts>
@@ -153,7 +160,29 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/i.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="63" column="151" selection-start-line="63" selection-start-column="151" selection-end-line="63" selection-end-column="151" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="das://beea7bc5-4809-4f5c-a474-7fc6576b69e6/schema/main/table/city">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -411,7 +440,7 @@
       <workItem from="1533982245315" duration="695000" />
       <workItem from="1534125102527" duration="2137000" />
       <workItem from="1534401555853" duration="2035000" />
-      <workItem from="1534403670089" duration="1142000" />
+      <workItem from="1534403670089" duration="1550000" />
     </task>
     <task id="LOCAL-00001" summary="1. 添加wxapp.jar">
       <created>1533109811180</created>
@@ -630,16 +659,23 @@
       <option name="project" value="LOCAL" />
       <updated>1533714692740</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="1. 拼音转换">
+      <created>1534404851586</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1534404851586</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101827000" />
+    <option name="totallyTimeSpent" value="102235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1867" height="1057" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21652892" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21652892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -670,7 +706,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.3294766" />
+      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.3294766" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3294766" />
@@ -706,7 +742,8 @@
     <MESSAGE value="1. 优化wx.d.ts文件下载" />
     <MESSAGE value="1. 添加打开同意目录下文件的功能" />
     <MESSAGE value="1. 优化功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 优化功能" />
+    <MESSAGE value="1. 拼音转换" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 拼音转换" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/javax/swing/JFrame.java">
@@ -993,20 +1030,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/i.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="63" column="151" selection-start-line="63" selection-start-column="151" selection-end-line="63" selection-end-column="151" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="das://beea7bc5-4809-4f5c-a474-7fc6576b69e6/schema/main/table/city">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ysnows/wxapp/i.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

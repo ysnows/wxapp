@@ -65,7 +65,7 @@ class i {
                 preparedStatement.setString(1, city_cn_simple);
                 preparedStatement.setString(2, province_cn_simple);
                 preparedStatement.setString(3, country_cn_simple);
-                preparedStatement.setString(4, city_id);
+                preparedStatement.setString(5, city_id);
                 preparedStatement.executeUpdate();
 
                 System.out.println(city_cn);

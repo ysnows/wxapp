@@ -36,7 +36,7 @@
         <action id="com.ysnows.wxapp.RelatedWxFiles" class="com.ysnows.wxapp.RelatedWxFiles"
                 text="RelatedWxFiles"
                 description="RelatedWxFiles" >
-            <keyboard-shortcut keymap="$default" first-keystroke="shift meta I" />
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl I" />
         </action >
 
         <action id="com.ysnows.wxapp.SyncTs" class="com.ysnows.wxapp.SyncTs" text="同步wx.d.ts"

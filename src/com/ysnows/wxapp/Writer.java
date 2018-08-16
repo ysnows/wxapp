@@ -50,7 +50,6 @@ class Writer extends WriteCommandAction.Simple {
 
         StringBuilder contentBuffer = new StringBuilder(content);
 
-
         for (String functionName : mFunctionsName) {
             Pattern pattern = Pattern.compile("\\n([\\s]*)" + functionName);
             Matcher matcher = pattern.matcher(content);

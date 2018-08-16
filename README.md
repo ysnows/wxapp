@@ -1,5 +1,10 @@
 ### 微信小程序WebStorm插件，支持PHPSTORM,WEBSTORM等全部intellij产品
 
+### 故事背景
+
+ > 作为intellij家族的忠实粉丝，就是那种没有intellij就不能写代码那种；怎么能忍受微信小程序官方开发工具呢，所以，就有了这款插件
+
+
 
 ##### 功能
 
@@ -34,14 +39,30 @@
 1. 从本地安装，[下载地址](https://github.com/ysnows/wxapp/blob/master/wxapp.jar)
 2. 从intellij插件仓库安装，搜索 `Wxapp`,或者[到此下载](https://plugins.jetbrains.com/plugin/10991-wxapp)
 
+#### Github开源地址
+1. [wxapp](https://github.com/ysnows/wxapp)
+
 #### Todo
   1. 后续将不断优化体验以及开发新功能，希望广大码农提出建设性的意见，或者直接贡献代码^^
-
-
     
     
 #### 参考
     
 1. 这款插件是基于[Matchmaker](https://github.com/lypeer/Matchmaker)修改而来，要感谢作者的辛苦劳动
+
+
+#### 结尾
+  > 如果有问题可以添加我的微信，或者给我点哄媳妇的零花钱（因为日夜写代码被老婆怀疑我不喜欢她了^^）
+  
+  
+###### 我的微信号(houloumengduan)
+  
+  ![](http://ozk223z60.bkt.clouddn.com/15337984267075.jpg?imageView/2/w/275)
+
+###### 给我打赏^^
+
+![](http://ozk223z60.bkt.clouddn.com/15337985740968.jpg?imageView/2/w/275)
+
+    
 
 
